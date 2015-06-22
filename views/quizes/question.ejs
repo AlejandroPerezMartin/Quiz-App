@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QuizApp</title>
+        <link rel='stylesheet' href='/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='/css/style.css' />
+    </head>
+    <body>
+        <div class="container">
+            <form action="/quizes/answer" method="get" accept-charset="utf-8">
+                <% question %>
+                <input type="text" name="answer" placeholder="Your answer here">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+            <% include ../footer %>
