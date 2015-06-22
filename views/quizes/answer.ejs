@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>QuizApp</title>
-        <link rel='stylesheet' href='/css/bootstrap.min.css' />
-        <link rel='stylesheet' href='/css/style.css' />
-    </head>
-    <body>
-        <div class="container">
-            <% answer %>
-            <a href="/quizes/question" title="Show answer">Try again!</a>
-            <% include ../footer %>
+<% include menu %>
+
+<div class="page-header">
+    <h1>Answer</h1>
+</div>
+
+<p><%= answer %></p>
+
+<a href="/quizes/question" title="Show answer">Try again!</a>
