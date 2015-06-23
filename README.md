@@ -1,3 +1,10 @@
 # QuizApp
 
-Projecto for MiriadaX course
+Project files of Node.js course.
+
+Using:
+
+- Node.js
+- Express
+- EJS
+- Bootstrap
