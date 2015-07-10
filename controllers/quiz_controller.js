@@ -1,7 +1,11 @@
+var models = require('../models/models.js');
+
 exports.question = function (req, res) {
-    res.render('quizes/question', {
-        title: "Question",
-        question: "Capital of Italy?"
+    models.Quiz.findAll().success(function () {
+        res.render('quizes/question', {
+            title: "Question",
+            question: quiz[0].question
+        });
     });
 };
 
